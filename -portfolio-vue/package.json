@@ -21,11 +21,13 @@
   "devDependencies": {
     "@nightwatch/vue": "^3.1.1",
     "@tsconfig/node20": "^20.1.4",
+    "@types/aos": "^3.0.7",
     "@types/node": "^20.14.12",
     "@vitejs/plugin-vue": "^5.0.5",
     "@vitejs/plugin-vue-jsx": "^4.0.0",
     "@vue/test-utils": "^2.4.6",
     "@vue/tsconfig": "^0.5.1",
+    "aos": "^2.3.4",
     "autoprefixer": "^10.4.19",
     "chromedriver": "^126.0.2",
     "geckodriver": "^4.4.1",
