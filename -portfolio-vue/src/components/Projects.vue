@@ -5,6 +5,16 @@ import senoBg from "../assets/img/seno_bg.svg";
 import survivalBg from "../assets/img/survival_bg.svg";
 import sayitBg from "../assets/img/sayit_bg.svg";
 import fituBg from "../assets/img/fitu_bg.svg";
+import golangLogo from "../assets/img/golang.svg";
+import kotlinLogo from "../assets/img/kotlin.svg";
+import unityLogo from "../assets/img/unity.svg";
+import csharpLogo from "../assets/img/csharp.svg";
+import pythonLogo from "../assets/img/python.svg";
+import sqliteLogo from "../assets/img/sqlite.svg";
+import expressLogo from "../assets/img/express.svg";
+import prismaLogo from "../assets/img/prisma.svg";
+import nextLogo from "../assets/img/next.svg";
+import postgresqlLogo from "../assets/img/postgresql.svg";
 
 const myProject = ref([
   {
@@ -66,7 +76,7 @@ const myProject = ref([
         v-for="project in myProject"
       >
         <div className="group bg-no-repeat bg-cover drop-shadow-lg bg-bottom rounded-xl py-10 px-8 transition ease-in-out delay-15 hover:-translate-y-1  duration-300 relative hover:bg-[#2E4756]  max-sm:px-6 max-sm:py-6 "
-        :style="{ backgroundImage: `url(${project.background})` }">
+        :style="{ backgroundImage: `url(${project.background})`, height: '100%' }">
           <p
             class="text-xl font-bold pt-20 relative z-10 drop-shadow-lg text-white"
           >
@@ -83,6 +93,18 @@ const myProject = ref([
           <p class="invisible group-hover:visible text-sm pt-5 text-white">
             Tech Stack:
           </p>
+          <div className="flex flex-row group-hover:visible invisible relative z-10 gap-2">
+            <img v-if="project.tech_stack.includes('golangLogo')" :src="golangLogo" alt="golangLogo" class="w-10 h-10" />
+          <img v-if="project.tech_stack.includes('postgresqlLogo')" :src="postgresqlLogo" alt="postgresqlLogo" class="w-10 h-10" />
+          <img v-if="project.tech_stack.includes('nextLogo')" :src="nextLogo" alt="nextLogo" class="w-10 h-10" />
+          <img v-if="project.tech_stack.includes('kotlinLogo')" :src="kotlinLogo" alt="kotlinLogo" class="w-10 h-10" />
+          <img v-if="project.tech_stack.includes('unityLogo')" :src="unityLogo" alt="unityLogo" class="w-10 h-10" />
+          <img v-if="project.tech_stack.includes('csharpLogo')" :src="csharpLogo" alt="csharpLogo" class="w-10 h-10" />
+          <img v-if="project.tech_stack.includes('pythonLogo')" :src="pythonLogo" alt="pythonLogo" class="w-10 h-10" />
+          <img v-if="project.tech_stack.includes('sqliteLogo')" :src="sqliteLogo" alt="sqliteLogo" class="w-10 h-10" />
+          <img v-if="project.tech_stack.includes('expressLogo')" :src="expressLogo" alt="expressLogo" class="w-10 h-10" />
+          <img v-if="project.tech_stack.includes('prismaLogo')" :src="prismaLogo" alt="prismaLogo" class="w-10 h-10" />
+              </div>
         </div>
       </div>
     </div>
