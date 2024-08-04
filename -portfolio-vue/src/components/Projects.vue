@@ -15,6 +15,8 @@ import expressLogo from "../assets/img/express.svg";
 import prismaLogo from "../assets/img/prisma.svg";
 import nextLogo from "../assets/img/next.svg";
 import postgresqlLogo from "../assets/img/postgresql.svg";
+import gitLogo from "../assets/img/proj_git.svg";
+import gitLogoHov from "../assets/img/proj_git_hov.svg"
 
 const myProject = ref([
   {
@@ -75,8 +77,26 @@ const myProject = ref([
         class="gap-6 justify-center max-sm:grid-rows-1 max-sm:grid-cols-none"
         v-for="project in myProject"
       >
-        <div className="group bg-no-repeat bg-cover drop-shadow-lg bg-bottom rounded-xl py-10 px-8 transition ease-in-out delay-15 hover:-translate-y-1  duration-300 relative hover:bg-[#2E4756]  max-sm:px-6 max-sm:py-6 "
+        <div class="group bg-no-repeat bg-cover drop-shadow-lg bg-bottom rounded-xl py-10 px-8 transition ease-in-out delay-15 hover:-translate-y-1  duration-300 relative hover:bg-[#2E4756]  max-sm:px-6 max-sm:py-6 "
         :style="{ backgroundImage: `url(${project.background})`, height: '100%' }">
+        <a
+                :href="project.github_link"
+                target="_blank"
+                class="relative z-20"
+              >
+                <div class="relative z-10">
+                  <img
+                    :src="gitLogo"
+                    alt="gitLogo"
+                    class="absolute inset-0"
+                  />
+                  <img
+                    :src="gitLogoHov"
+                    alt="gitLogoHov"
+                    class="absolute inset-0 opacity-0 hover:opacity-100"
+                  />
+                </div>
+              </a>
           <p
             class="text-xl font-bold pt-20 relative z-10 drop-shadow-lg text-white"
           >
@@ -93,7 +113,7 @@ const myProject = ref([
           <p class="invisible group-hover:visible text-sm pt-5 text-white">
             Tech Stack:
           </p>
-          <div className="flex flex-row group-hover:visible invisible relative z-10 gap-2">
+          <div class="flex flex-row group-hover:visible invisible relative z-10 gap-2">
             <img v-if="project.tech_stack.includes('golangLogo')" :src="golangLogo" alt="golangLogo" class="w-10 h-10" />
           <img v-if="project.tech_stack.includes('postgresqlLogo')" :src="postgresqlLogo" alt="postgresqlLogo" class="w-10 h-10" />
           <img v-if="project.tech_stack.includes('nextLogo')" :src="nextLogo" alt="nextLogo" class="w-10 h-10" />

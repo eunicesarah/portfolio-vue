@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import githubLogo from "../assets/img/github_logo.svg";
 
 </script>
 
