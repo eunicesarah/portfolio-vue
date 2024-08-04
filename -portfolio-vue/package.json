@@ -30,6 +30,7 @@
     "aos": "^2.3.4",
     "autoprefixer": "^10.4.19",
     "chromedriver": "^126.0.2",
+    "file-loader": "^6.2.0",
     "geckodriver": "^4.4.1",
     "nightwatch": "^3.6.3",
     "npm-run-all2": "^6.2.0",
