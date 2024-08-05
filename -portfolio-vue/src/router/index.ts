@@ -6,7 +6,6 @@ import Greeting from '@/components/Greeting.vue';
 import Projects from '@/components/Projects.vue';
 
 const routes = [
-  { path: '/', redirect: '/greeting' },
   { path: '/greeting', name: 'greeting', component: Greeting },
   { path: '/contact', name: 'contact', component: Contact },
   { path: '/aboutme', name: 'aboutme', component: AboutMe },
