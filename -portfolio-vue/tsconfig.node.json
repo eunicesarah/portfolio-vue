@@ -7,7 +7,7 @@
     "nightwatch.conf.*",
     "playwright.config.*",
     "src/shims-vue.d.ts",
-    "src/shims-svg.d.ts"
+    "src/shims.d.ts"
   ],
   "compilerOptions": {
     "composite": true,
