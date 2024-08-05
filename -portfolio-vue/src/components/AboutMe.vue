@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import profile from "../assets/img/profile.jpg";
 </script>
 
 <template>
@@ -12,7 +11,7 @@ import profile from "../assets/img/profile.jpg";
       <p class="text-center text-3xl font-bold min-h-20 text-white">About Me</p>
       <div class="flex flex-row max-sm:flex-col max-sm:items-center pl-8 text-white">
         <img
-          :src="profile"
+          src="/img/profile.png"
           alt="aboutme"
           width="250"
           height="100"

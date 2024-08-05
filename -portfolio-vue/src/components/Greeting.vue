@@ -15,16 +15,16 @@
       </div>
       <div class="flex flex-row gap-4 pt-5">
         <a href="https://github.com/eunicesarah" target="_blank">
-          <img src="../assets/img/github.svg" alt="logoGithub"/>
+          <img src="/img/github.svg" alt="logoGithub"/>
         </a>
         <a
           href="https://www.linkedin.com/in/eunicesarahsiregar/"
           target="_blank"
         >
-          <img src="../assets/img/linkedin.svg" alt="logoLinkedin"/>
+          <img src="/img/linkedin.svg" alt="logoLinkedin"/>
         </a>
         <a href="mailto:eunicesrgr@gmail.com">
-          <img src="../assets/img/email.svg" alt="logoEmail" />
+          <img src="/img/email.svg" alt="logoEmail" />
         </a>
       </div>
       <div class="flex flex-row pt-5 gap-3">

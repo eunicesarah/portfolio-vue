@@ -3,10 +3,10 @@ export default {
   content: [
     "./index.html",
     "./src/**/*.{vue,js,ts,jsx,tsx}",
+    "./public/img/*.{jpg,png,gif,svg}",
   ],
   theme: {
     extend: {},
   },
   plugins: [],
 }
-

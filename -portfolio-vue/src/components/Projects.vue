@@ -1,22 +1,5 @@
 <script setup lang="ts">
 import { ref } from "vue";
-import bondomanBg from "@/assets/img/bondoman_bg.svg";
-import senoBg from "@/assets/img/seno_bg.svg";
-import survivalBg from "@/assets/img/survival_bg.svg";
-import sayitBg from "@/assets/img/sayit_bg.svg";
-import fituBg from "@/assets/img/fitu_bg.svg";
-import golangLogo from "@/assets/img/golang.svg";
-import kotlinLogo from "@/assets/img/kotlin.svg";
-import unityLogo from "@/assets/img/unity.svg";
-import csharpLogo from "@/assets/img/csharp.svg";
-import pythonLogo from "@/assets/img/python.svg";
-import sqliteLogo from "@/assets/img/sqlite.svg";
-import expressLogo from "@/assets/img/express.svg";
-import prismaLogo from "@/assets/img/prisma.svg";
-import nextLogo from "@/assets/img/next.svg";
-import postgresqlLogo from "@/assets/img/postgresql.svg";
-import gitLogo from "@/assets/img/proj_git.svg";
-import gitLogoHov from "@/assets/img/proj_git_hov.svg"
 
 const myProject = ref([
   {
@@ -26,7 +9,7 @@ const myProject = ref([
     tech_stack: ["golangLogo", "postgresqlLogo", "nextLogo"],
     project_role: "Fullstack Developer | UI Designer",
     github_link: "https://github.com/eunicesarah/seno-medika-clinic-adm-fe",
-    background: senoBg,
+    background: "/img/seno_bg.png",
   },
   {
     project_name: "Bondoman Android App",
@@ -35,7 +18,7 @@ const myProject = ref([
     tech_stack: ["kotlinLogo"],
     project_role: "Android Developer | UI Designer",
     github_link: "https://github.com/eunicesarah/bondoman",
-    background: bondomanBg,
+    background: "/img/bondoman_bg.png",
   },
   {
     project_name: "Survival Shooter The Sequel",
@@ -44,7 +27,7 @@ const myProject = ref([
     tech_stack: ["unityLogo", "csharpLogo"],
     project_role: "Game Developer",
     github_link: "https://github.com/eunicesarah/survival-shooter-unity",
-    background: survivalBg,
+    background: "/img/survival_bg.png",
   },
   {
     project_name: "SayIt",
@@ -53,7 +36,7 @@ const myProject = ref([
     tech_stack: ["expressLogo", "prismaLogo"],
     project_role: "Fullstack Developer",
     github_link: "https://github.com/eunicesarah/sayit-rest",
-    background: sayitBg,
+    background: "/img/sayit_bg.png",
   },
   {
     project_name: "FitU",
@@ -62,7 +45,7 @@ const myProject = ref([
     tech_stack: ["pythonLogo", "sqliteLogo"],
     project_role: "Fullstack Developer | UI Designer",
     github_link: "https://github.com/eunicesarah/FitU",
-    background: fituBg,
+    background: "/img/fitu_bg.png",
   },
 ]);
 </script>
@@ -86,12 +69,12 @@ const myProject = ref([
               >
                 <div class="relative z-10">
                   <img
-                    :src="gitLogo"
+                    src="/img/proj_git.png"
                     alt="gitLogo"
                     class="absolute inset-0"
                   />
                   <img
-                    :src="gitLogoHov"
+                    src= "/img/proj_git_hov.png"
                     alt="gitLogoHov"
                     class="absolute inset-0 opacity-0 hover:opacity-100"
                   />
@@ -114,16 +97,16 @@ const myProject = ref([
             Tech Stack:
           </p>
           <div class="flex flex-row group-hover:visible invisible relative z-10 gap-2">
-            <img v-if="project.tech_stack.includes('golangLogo')" :src="golangLogo" alt="golangLogo" class="w-10 h-10" />
-          <img v-if="project.tech_stack.includes('postgresqlLogo')" :src="postgresqlLogo" alt="postgresqlLogo" class="w-10 h-10" />
-          <img v-if="project.tech_stack.includes('nextLogo')" :src="nextLogo" alt="nextLogo" class="w-10 h-10" />
-          <img v-if="project.tech_stack.includes('kotlinLogo')" :src="kotlinLogo" alt="kotlinLogo" class="w-10 h-10" />
-          <img v-if="project.tech_stack.includes('unityLogo')" :src="unityLogo" alt="unityLogo" class="w-10 h-10" />
-          <img v-if="project.tech_stack.includes('csharpLogo')" :src="csharpLogo" alt="csharpLogo" class="w-10 h-10" />
-          <img v-if="project.tech_stack.includes('pythonLogo')" :src="pythonLogo" alt="pythonLogo" class="w-10 h-10" />
-          <img v-if="project.tech_stack.includes('sqliteLogo')" :src="sqliteLogo" alt="sqliteLogo" class="w-10 h-10" />
-          <img v-if="project.tech_stack.includes('expressLogo')" :src="expressLogo" alt="expressLogo" class="w-10 h-10" />
-          <img v-if="project.tech_stack.includes('prismaLogo')" :src="prismaLogo" alt="prismaLogo" class="w-10 h-10" />
+            <img v-if="project.tech_stack.includes('golangLogo')" src="/img/golang.png" alt="golangLogo" class="w-10 h-10" />
+          <img v-if="project.tech_stack.includes('postgresqlLogo')" src="/img/postgresql.png" alt="postgresqlLogo" class="w-10 h-10" />
+          <img v-if="project.tech_stack.includes('nextLogo')" src="/img/next.png" alt="nextLogo" class="w-10 h-10" />
+          <img v-if="project.tech_stack.includes('kotlinLogo')" src="/img/kotlin.png" alt="kotlinLogo" class="w-10 h-10" />
+          <img v-if="project.tech_stack.includes('unityLogo')" src="/img/unity.png" alt="unityLogo" class="w-10 h-10" />
+          <img v-if="project.tech_stack.includes('csharpLogo')" src="/img/csharp.png" alt="csharpLogo" class="w-10 h-10" />
+          <img v-if="project.tech_stack.includes('pythonLogo')" src="/img/python.png" alt="pythonLogo" class="w-10 h-10" />
+          <img v-if="project.tech_stack.includes('sqliteLogo')" src="/img/sqlite.png" alt="sqliteLogo" class="w-10 h-10" />
+          <img v-if="project.tech_stack.includes('expressLogo')" src="/img/express.png" alt="expressLogo" class="w-10 h-10" />
+          <img v-if="project.tech_stack.includes('prismaLogo')" src="/img/prisma.png" alt="prismaLogo" class="w-10 h-10" />
               </div>
         </div>
       </div>
