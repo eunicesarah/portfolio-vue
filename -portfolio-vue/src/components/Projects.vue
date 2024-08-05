@@ -1,22 +1,22 @@
 <script setup lang="ts">
 import { ref } from "vue";
-import bondomanBg from "../assets/img/bondoman_bg.svg";
-import senoBg from "../assets/img/seno_bg.svg";
-import survivalBg from "../assets/img/survival_bg.svg";
-import sayitBg from "../assets/img/sayit_bg.svg";
-import fituBg from "../assets/img/fitu_bg.svg";
-import golangLogo from "../assets/img/golang.svg";
-import kotlinLogo from "../assets/img/kotlin.svg";
-import unityLogo from "../assets/img/unity.svg";
-import csharpLogo from "../assets/img/csharp.svg";
-import pythonLogo from "../assets/img/python.svg";
-import sqliteLogo from "../assets/img/sqlite.svg";
-import expressLogo from "../assets/img/express.svg";
-import prismaLogo from "../assets/img/prisma.svg";
-import nextLogo from "../assets/img/next.svg";
-import postgresqlLogo from "../assets/img/postgresql.svg";
-import gitLogo from "../assets/img/proj_git.svg";
-import gitLogoHov from "../assets/img/proj_git_hov.svg"
+import bondomanBg from "@/assets/img/bondoman_bg.svg";
+import senoBg from "@/assets/img/seno_bg.svg";
+import survivalBg from "@/assets/img/survival_bg.svg";
+import sayitBg from "@/assets/img/sayit_bg.svg";
+import fituBg from "@/assets/img/fitu_bg.svg";
+import golangLogo from "@/assets/img/golang.svg";
+import kotlinLogo from "@/assets/img/kotlin.svg";
+import unityLogo from "@/assets/img/unity.svg";
+import csharpLogo from "@/assets/img/csharp.svg";
+import pythonLogo from "@/assets/img/python.svg";
+import sqliteLogo from "@/assets/img/sqlite.svg";
+import expressLogo from "@/assets/img/express.svg";
+import prismaLogo from "@/assets/img/prisma.svg";
+import nextLogo from "@/assets/img/next.svg";
+import postgresqlLogo from "@/assets/img/postgresql.svg";
+import gitLogo from "@/assets/img/proj_git.svg";
+import gitLogoHov from "@/assets/img/proj_git_hov.svg"
 
 const myProject = ref([
   {
