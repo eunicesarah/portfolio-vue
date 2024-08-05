@@ -13,7 +13,7 @@
     "types": ["nightwatch"]
   },
   "include": ["../node_modules/@nightwatch/**/*", "../src/components/**/*", "../tests/e2e/**/*", "src/shims-vue.d.ts",
-    "src/shims-svg.d.ts"],
+    "src/shims.d.ts"],
   "ts-node": {
     "transpileOnly": true
   },
