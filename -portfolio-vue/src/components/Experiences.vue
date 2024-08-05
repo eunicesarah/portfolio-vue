@@ -2,11 +2,11 @@
 import { ref } from "vue";
 const myExperience = ref([
     {
-      role: "IT Intern",
-      company: "OPPO Indonesia",
-      duration: "June, 2024 - Sept, 2024",
+      role: "Frontend Developer Intern",
+      company: "Bangunindo Teknusa Jaya",
+      duration: "July, 2024 - January, 2025",
       type: "Internship",
-      desc: "Developed a web-based application for launching a new product using Node.js",
+      desc: "Developed a web-based application for launching using Vue.js",
     },
     {
         role: "Kinship Staff",
