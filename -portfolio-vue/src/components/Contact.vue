@@ -6,7 +6,6 @@ const form = ref<HTMLFormElement | null>(null);
 const handleSubmit = (e: Event) => {
   e.preventDefault();
 
-  // Make sure form.current is not null before attempting to send the form
   if (form.value) {
     emailjs
       .sendForm(
@@ -44,7 +43,7 @@ const handleSubmit = (e: Event) => {
       </h2>
       <form @submit="handleSubmit" ref="form" class="space-y-8">
         <div>
-          <label class="block mb-2 text-sm font-medium text-white">
+          <label class="block mb-2 text-sm font-medium text-white" for="name">
             Your Name
           </label>
           <input
@@ -57,7 +56,7 @@ const handleSubmit = (e: Event) => {
           />
         </div>
         <div>
-          <label class="block mb-2 text-sm font-medium text-white">
+          <label class="block mb-2 text-sm font-medium text-white" for="email">
             Your Email
           </label>
           <input
@@ -70,7 +69,7 @@ const handleSubmit = (e: Event) => {
           />
         </div>
         <div class="sm:col-span-2">
-          <label class="block mb-2 text-sm font-medium text-white">
+          <label class="block mb-2 text-sm font-medium text-white" for="message">
             Your Message
           </label>
           <textarea

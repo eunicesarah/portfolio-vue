@@ -1,35 +1,14 @@
-//
-// Refer to the online docs for more details:
-// https://nightwatchjs.org/guide/configuration/nightwatch-configuration-file.html
-//
-//  _   _  _         _      _                     _          _
-// | \ | |(_)       | |    | |                   | |        | |
-// |  \| | _   __ _ | |__  | |_ __      __  __ _ | |_   ___ | |__
-// | . ` || | / _` || '_ \ | __|\ \ /\ / / / _` || __| / __|| '_ \
-// | |\  || || (_| || | | || |_  \ V  V / | (_| || |_ | (__ | | | |
-// \_| \_/|_| \__, ||_| |_| \__|  \_/\_/   \__,_| \__| \___||_| |_|
-//             __/ |
-//            |___/
-//
-
 module.exports = {
-  // An array of folders (excluding subfolders) where your tests are located;
-  // if this is not specified, the test source must be passed as the second argument to the test runner.
-  src_folders: [],
+  src_folders: ['src/components/__tests__'],
 
-  // See https://nightwatchjs.org/guide/concepts/page-object-model.html
-  page_objects_path: [],
+  page_objects_path: ['src/components'],
 
-  // See https://nightwatchjs.org/guide/extending-nightwatch/adding-custom-commands.html
   custom_commands_path: [],
 
-  // See https://nightwatchjs.org/guide/extending-nightwatch/adding-custom-assertions.html
   custom_assertions_path: [],
 
-  // See https://nightwatchjs.org/guide/extending-nightwatch/adding-plugins.html
   plugins: ['@nightwatch/vue'],
 
-  // See https://nightwatchjs.org/guide/concepts/test-globals.html#external-test-globals
   globals_path: '',
 
   vite_dev_server: {
@@ -37,7 +16,11 @@ module.exports = {
     port: process.env.CI ? 4173 : 5173
   },
 
-  webdriver: {},
+  webdriver: {
+    start_process: true,
+    server_path: require('chromedriver').path,
+    cli_args: ['--verbose'] 
+  },
 
   test_workers: {
     enabled: true,
@@ -56,12 +39,12 @@ module.exports = {
       },
 
       desiredCapabilities: {
-        browserName: 'firefox'
+        browserName: 'chrome'
       },
 
       webdriver: {
         start_process: true,
-        server_path: ''
+        server_path: require('chromedriver').path
       }
     },
 
@@ -93,7 +76,7 @@ module.exports = {
       },
       webdriver: {
         start_process: true,
-        server_path: '',
+        server_path: require('geckodriver').path,
         cli_args: [
           // very verbose geckodriver logs
           // '-vv'
@@ -120,7 +103,7 @@ module.exports = {
 
       webdriver: {
         start_process: true,
-        server_path: '',
+        server_path: require('chromedriver').path,
         cli_args: [
           // --verbose
         ]
@@ -150,4 +133,4 @@ module.exports = {
       }
     }
   }
-}
+};
